@@ -1,4 +1,4 @@
-# Locust-Driven Performance Evaluation of Storage Systems
+# LoDESS: Locust-Driven Performance Evaluation of Storage Systems
 
 The provided code utilizes the [Locust](https://locust.io/) load testing tool to assess the performance of three distinct storage systems: [MinIO](https://min.io/), [BigchainDB](), and [IPFS](https://ipfs.tech/). 
 
@@ -31,7 +31,7 @@ Install locust: `python3 -m pip install locust`
 
 ```docker pull minio/minio:latest```
 
-Setup the endpoint and credentials in ```minioTester.py```.
+Setup the endpoint and credentials in ```minioTester.py```
 
 ```python
 aces = Minio(  
@@ -110,7 +110,6 @@ And then on each worker (replace 192.168.0.14 with the IP of the master machine,
 For optimal performance, the number of slaves on the local machine should not exceed the number of CPU cores.
 
 See [this](https://docs.locust.io/en/stable/running-distributed.html) for more options.
-
 
 
 ### Running Locust without the web UI
